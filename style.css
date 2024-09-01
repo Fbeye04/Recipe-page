@@ -1,7 +1,128 @@
+:root {
+  --bold-color: hsl(14, 45%, 36%);
+  --card-color: hsl(0, 0%, 100%);
+  --background-color: hsl(30, 54%, 90%);
+  --another-color: hsl(30, 18%, 87%);
+  --paragraf-color: hsl(30, 10%, 34%);
+  --title-color: hsl(24, 5%, 18%);
+  --preparation-color: hsl(332, 51%, 32%);
+  --preparation-background-color: hsl(330, 100%, 98%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--paragraf-color);
+  font-family: "Outfit", system-ui;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card-container {
+  background-color: var(--card-color);
+}
+
+.card-container .card-header img {
+  width: 100%;
+}
+
+.card-container .card-header .header-description {
+  padding: 1rem;
+}
+
+.card-container .card-header .header-description #title {
+  font-size: 2rem;
+  font-family: "Young Serif", system-ui;
+  font-weight: 400;
+  color: var(--title-color);
+}
+
+.card-container .card-header .header-description #header-paragraf {
+  font-size: 0.9rem;
+  padding-top: 1rem;
+}
+
+.card-container .card-header #preparation-time {
+  padding: 1rem 2rem;
+  margin: 0 1rem;
+  background-color: var(--preparation-background-color);
+  border-radius: 1rem;
+}
+
+.card-container .card-header #preparation-time #preparation-title {
+  color: var(--preparation-color);
+  padding-bottom: 1rem;
+}
+
+.card-container .card-header #preparation-time ul {
+  padding: 0 1.5rem;
+}
+
+span {
+  font-weight: 600;
+}
+
+.card-container .card-header #preparation-time ul li {
+  padding: 0.5rem;
+}
+
+.card-container .card-body {
+  padding: 2rem;
+}
+
+.card-container .card-body h2 {
+  font-family: "Young Serif", system-ui;
+  color: var(--bold-color);
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+.card-container .card-body ul,
+.card-container .card-body ol {
+  padding: 0 1.5rem;
+}
+
+.card-container .card-body ul li,
+.card-container .card-body ol li {
+  padding: 0.5rem;
+}
+
+.card-container .card-body section {
+  padding-bottom: 1rem;
+}
+
+p,
+li {
+  font-size: 0.9rem;
+}
+
 .attribution {
-  font-size: 11px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0.5rem;
+  font-size: 0.5rem;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
+  text-decoration: none;
 }
