@@ -151,7 +151,6 @@ hr {
 
 .attribution a {
   color: hsl(151, 45%, 44%);
-  text-decoration: none;
 }
 
 @media (min-width: 376px) {
