@@ -7,13 +7,13 @@
   --title-color: hsl(24, 5%, 18%);
   --preparation-color: hsl(332, 51%, 32%);
   --preparation-background-color: hsl(330, 100%, 98%);
+  font-size: 16px;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 16px;
 }
 
 body {
@@ -28,49 +28,73 @@ body {
 }
 
 .main-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 375px;
   width: 100%;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card-container {
   background-color: var(--card-color);
 }
 
-.card-container .card-header img {
-  width: 100%;
+h1 {
+  font-family: "Young Serif", serif;
+  font-size: 2rem;
+  color: var(--title-color);
+  margin-bottom: 1rem;
 }
 
-.card-container .card-header .header-description {
+h2 {
+  font-family: "Young Serif", serif;
+  font-size: 1.5rem;
+  color: var(--bold-color);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+p,
+li {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.card-header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-header .header-description {
   padding: 1.5rem;
 }
 
-.card-container .card-header .header-description #title {
+.card-header .header-description #title {
   font-size: 2rem;
   font-family: "Young Serif", system-ui;
   font-weight: 400;
   color: var(--title-color);
 }
 
-.card-container .card-header .header-description #header-paragraf {
+.card-header .header-description #header-paragraf {
   font-size: 0.9rem;
   padding-top: 1rem;
 }
 
-.card-container .card-header #preparation-time {
+.card-header #preparation-time {
   padding: 1rem 2rem;
   margin: 0 1rem;
   background-color: var(--preparation-background-color);
   border-radius: 1rem;
 }
 
-.card-container .card-header #preparation-time #preparation-title {
+.card-header #preparation-time #preparation-title {
   color: var(--preparation-color);
   padding-bottom: 1rem;
 }
 
-.card-container .card-header #preparation-time ul {
+.card-header #preparation-time ul {
   padding: 0 1rem;
 }
 
@@ -78,33 +102,25 @@ span {
   font-weight: 600;
 }
 
-.card-container .card-header #preparation-time ul li {
-  padding: 0.5rem;
+.card-header #preparation-time ul li {
+  padding: 0;
 }
 
-.card-container .card-body {
+.card-body {
   padding: 2rem;
 }
 
-.card-container .card-body h2 {
-  font-family: "Young Serif", system-ui;
-  color: var(--bold-color);
-  font-size: 1.5rem;
-  font-weight: 400;
-  padding-bottom: 1rem;
-}
-
-.card-container .card-body ul,
-.card-container .card-body ol {
+.card-body ul,
+.card-body ol {
   padding: 0 1.5rem;
 }
 
-.card-container .card-body ul li,
-.card-container .card-body ol li {
+.card-body ul li,
+.card-body ol li {
   padding: 0.5rem;
 }
 
-.card-container .card-body section {
+.card-body section {
   padding-bottom: 1rem;
 }
 
