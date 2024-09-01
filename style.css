@@ -45,7 +45,7 @@ h1 {
   font-weight: 400;
 }
 
-h2 {
+h2:not(#preparation-title) {
   font-family: "Young Serif", serif;
   font-size: 1.5rem;
   color: var(--bold-color);
@@ -85,6 +85,7 @@ li {
 .card-header #preparation-time #preparation-title {
   color: var(--preparation-color);
   padding-bottom: 1rem;
+  font-size: 1.3rem;
 }
 
 #preparation-time li::marker {
