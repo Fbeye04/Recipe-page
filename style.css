@@ -42,15 +42,17 @@ h1 {
   font-family: "Young Serif", serif;
   font-size: 2rem;
   color: var(--title-color);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
 }
 
 h2 {
   font-family: "Young Serif", serif;
   font-size: 1.5rem;
   color: var(--bold-color);
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
+  padding: 0;
 }
 
 p,
@@ -58,6 +60,10 @@ li {
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 0.5rem;
+}
+
+li {
+  list-style: inside;
 }
 
 .card-header img {
@@ -70,16 +76,8 @@ li {
   padding: 1.5rem;
 }
 
-.card-header .header-description #title {
-  font-size: 2rem;
-  font-family: "Young Serif", system-ui;
-  font-weight: 400;
-  color: var(--title-color);
-}
-
 .card-header .header-description #header-paragraf {
   font-size: 0.9rem;
-  padding-top: 1rem;
 }
 
 .card-header #preparation-time {
@@ -94,44 +92,34 @@ li {
   padding-bottom: 1rem;
 }
 
-.card-header #preparation-time ul {
-  padding: 0 1rem;
+#preparation-time li::marker {
+  color: var(--preparation-color);
 }
 
 span {
   font-weight: 600;
 }
 
-.card-header #preparation-time ul li {
-  padding: 0;
-}
-
 .card-body {
   padding: 2rem;
-}
-
-.card-body ul,
-.card-body ol {
-  padding: 0 1.5rem;
-}
-
-.card-body ul li,
-.card-body ol li {
-  padding: 0.5rem;
 }
 
 .card-body section {
   padding-bottom: 1rem;
 }
 
-p,
-li {
-  font-size: 0.9rem;
+.card-body #instructions li {
+  list-style: inside decimal;
+}
+
+#instructions li::marker,
+#ingredients li::marker {
+  color: var(--bold-color);
+  font-weight: 700;
 }
 
 table {
   width: 100%;
-  padding-left: 1rem;
   padding-top: 1rem;
 }
 
@@ -152,16 +140,20 @@ td {
   font-size: 0.8rem;
 }
 
+hr {
+  width: 1;
+  color: var(--another-color);
+}
+
 .attribution {
   bottom: 0;
   right: 0;
   left: 0;
   padding: 0.5rem;
-  font-size: 0.5rem;
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(151, 45%, 44%);
   text-decoration: none;
 }
