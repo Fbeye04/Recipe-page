@@ -30,7 +30,6 @@ body {
 .main-container {
   max-width: 375px;
   width: 100%;
-  overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -74,10 +73,6 @@ li {
 
 .card-header .header-description {
   padding: 1.5rem;
-}
-
-.card-header .header-description #header-paragraf {
-  font-size: 0.9rem;
 }
 
 .card-header #preparation-time {
@@ -156,4 +151,33 @@ hr {
 .attribution a {
   color: hsl(151, 45%, 44%);
   text-decoration: none;
+}
+
+@media (min-width: 376px) {
+  body {
+    padding: 2rem;
+  }
+
+  .main-container {
+    width: 100%;
+    max-width: 720px;
+  }
+
+  .card-container {
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+  .card-header img {
+    padding: 1rem 1rem 0 1rem;
+    border-radius: 1.5rem 1.5rem;
+  }
+
+  .card-header .header-description {
+    padding: 1rem;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
 }
